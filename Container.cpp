@@ -1,5 +1,6 @@
 #include "Container.hpp"
 #include "includes.hpp"
+#include "IBox.hpp"
 
 template<class T>
 Container<T>::Container()
@@ -158,7 +159,7 @@ T Container<T>::getElementsValueAt(int position) //works like an iterator
 	if (position == 0)
 	{
 		return this->c_First->e_value;
-		this->c_First = this->c_First->e_next; //error
+		//this->c_First = this->c_First->e_next; //error
 
 	}
 	else if (position == this->getSize())
@@ -275,3 +276,4 @@ template class Container<long long>;
 template class Container<char>;
 template class Container<char*>;
 template class Container<std::string>;
+template class Container<Geometry::NBox *>; //because of NBox abstraction

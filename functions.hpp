@@ -2,6 +2,7 @@
 
 #include "includes.hpp"
 #include "defines.hpp"
+#include "IBox.hpp"
 
 template<typename T>
 void printThis(std::string message_to_print ,T info_to_print) //? how to put N parameters to method - complicated and kind of useless

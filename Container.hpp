@@ -16,7 +16,6 @@ public:
 	Container(Container<T> &);  //copy constructor
 	
 	//element adding functions
-
 	void putElementAtBegin( T );
 	void putElementAtEnd( T );
 	//                       value,position
@@ -32,8 +31,6 @@ public:
 	int getSize();   //gets the containers size
 	void clear();    //clear the container
 
-
-
 private:
 
 	int c_size;  //containers size
@@ -48,5 +45,4 @@ private:
 
 	Element * c_First; //points to the first element
 	Element * c_Last;  //points to the last element
-
 };
