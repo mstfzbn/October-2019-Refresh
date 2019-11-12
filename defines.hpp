@@ -14,3 +14,14 @@ enum Dimensions
     FOUR,
     FIVE
 };
+
+enum Console_Color
+{
+    RED = 31,
+    GREEN,
+    YELLOW,
+    BLUE,
+    MAGENTA,
+    CYAN,
+    WHITE
+};

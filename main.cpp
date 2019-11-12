@@ -84,8 +84,7 @@ int main(){
         //this is polymorphism ;)
         for(size_t j = 0; j < test_conti.getElementsValueAt(k)->GetDimensions(); ++j)
         {
-            
-            std::cout << "  size " << j << ':' << 
+            std::cout << "\033[0;33m"<< "  size " << j << ':' <<"\033[0m" <<
             test_conti.getElementsValueAt(k)->GetSizeOfAllDimensions()->at(j)<<"\n";
         }
 
@@ -93,6 +92,7 @@ int main(){
         test_conti.getElementsValueAt(k)->ShowName();
         printThis("\n", " ");
     }
+
 
     #ifdef DEBUG
     DEBUG_TOOLS::StopProgramExecutionTimer();

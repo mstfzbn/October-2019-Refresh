@@ -27,14 +27,16 @@ namespace Geometry
         NBox() 
         {
             #ifdef DEBUG
-            std::cout << "\n\n NBox Constructor called.\n";
+            std::cout << "\033[0;31m\n NBox Constructor called.\n\033[0m";
+           // std::cout << "\n\n NBox Constructor called.\n";
             #endif
         }; //need implemntation
         
         virtual ~NBox() 
         {
             #ifdef DEBUG
-            std::cout << "\n\n NBox Destructor called.\n";
+             std::cout << "\033[0;31m\n NBox Destructor called.\n\033[0m";
+           // std::cout << "\n\n NBox Destructor called.\n";
             #endif
 
             m_nbox_lengths.clear();
@@ -78,7 +80,8 @@ namespace Geometry
         ThreeDimensionalBox():NBox()
         {
             #ifdef DEBUG
-            std::cout << "\n\n ThreeDimensionalBox Constructor called.\n";
+            std::cout << "\033[0;31m\n ThreeDimensionalBox Constructor called.\n\033[0m";
+            //std::cout << "\n\n ThreeDimensionalBox Constructor called.\n";
             #endif
 
             this->SetDimensions( THREE );
@@ -87,13 +90,15 @@ namespace Geometry
         ~ThreeDimensionalBox()
         {
             #ifdef DEBUG
-            std::cout << "\n\n ThreeDimensionalBox Destructor called.\n";            
+            std::cout << "\033[0;31m\n ThreeDimensionalBox Constructor called.\n\033[0m";           
+           //std::cout << "\n\n ThreeDimensionalBox Destructor called.\n";            
             #endif
         };     
 
         virtual void ShowName()
         {
-            std::cout << "\n3D box\n";
+            std::cout << "\033[0;36m\n3D box\n\033[0m"; 
+            //std::cout << "\n3D box\n";
         }
     };
 
@@ -103,7 +108,9 @@ namespace Geometry
         FourDimensionalBox():NBox()
         {
             #ifdef DEBUG
-            std::cout << "\n\n FourDimensionalBox Constructor called.\n";
+            std::cout << "\033[0;31m\n FourDimensionalBox Constructor called.\n\033[0m";  
+            
+            //std::cout << "\n\n FourDimensionalBox Constructor called.\n";
             #endif
 
             this->SetDimensions( FOUR );
@@ -112,13 +119,15 @@ namespace Geometry
         ~FourDimensionalBox()
         {
             #ifdef DEBUG
-            std::cout << "\n\n FourDimensionalBox Destructor called.\n";            
+            std::cout << "\033[0;31m\n FourDimensionalBox Destructor called\n\033[0m"; 
+            //std::cout << "\n\n FourDimensionalBox Destructor called.\n";            
             #endif
         };     
 
         virtual void ShowName()
         {  
-            std::cout << "\n4D box\n";
+            std::cout << "\033[0;35m\n4D box\n\033[0m"; 
+            //std::cout << "\n4D box\n";
         }
     };
 
