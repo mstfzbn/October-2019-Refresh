@@ -19,3 +19,5 @@
 //#14 CMake to macOS
 //#15 ALGORITHMS!
 //#16 shared_ptr with instance win derivated class
+
+//#17 singleton for debug messaging
