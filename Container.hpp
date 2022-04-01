@@ -1,11 +1,5 @@
 #pragma once
 
-//refactor to convert to unified valu storage
-//firstly, the class must be template type, to store different kind of objects..
-//like a vector<T>
-//the question about struct with T value
-//if the class is templyte type, the properties and their properties can also be T-type
-
 template<class T>
 class Container {
 public:
@@ -35,7 +29,7 @@ private:
 
 	int c_size;  //containers size
 
-	struct Element  //the node from container chain
+	struct Element  //the node constructs container chain
 	{					
 		T e_value;
 		Element * e_next;
