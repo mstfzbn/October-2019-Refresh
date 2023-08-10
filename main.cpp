@@ -1,6 +1,6 @@
 #include "functions.hpp"
 
-int main(){
+int main(int argc, char *argv[]){
     #ifdef DEBUG
     DEBUG_TOOLS::StartProgramExecutionTimer();
     #endif  
