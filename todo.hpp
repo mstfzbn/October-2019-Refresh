@@ -21,3 +21,5 @@
 //#16 shared_ptr with instance win derivated class
 
 //#17 singleton for debug messaging
+//more design patterns
+//c++ 20/23 standard
